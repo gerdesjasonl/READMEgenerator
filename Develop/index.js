@@ -38,7 +38,7 @@ const userResponses = ({userTitle, userDescription, userInstall, userUsage, user
     <p id="contribEntry">${userContribGuide}</p>
     <h3 style="background-color: black;text-align: center;color:azure;" id="tests">Test Instructions</h3>
     <p id="testsEntry">${userTests}</p>
-    <h3 style="background-color: black;text-align: center;color:azure;" id="questions">Fuurther Questions</h3>
+    <h3 style="background-color: black;text-align: center;color:azure;" id="questions">Further Questions</h3>
     <p id="questionsEntry">${userGitHub} ${userEmail}</p>
 </body>
 <footer>
@@ -46,8 +46,6 @@ const userResponses = ({userTitle, userDescription, userInstall, userUsage, user
 </footer>
 
 </html>`;
-
-// const initReadmeGen = {}
 
 inquirer
     .prompt([
@@ -85,6 +83,12 @@ inquirer
             type: 'text',
             name:'userContribGuide',
             message: colors.bgCyan('Enter Contribution Guidelines')   
+        },
+
+        {
+            type: 'text',
+            name: 'userTests',
+            message: colors.bgCyan('Enter Testing information')
         },
 
         {
