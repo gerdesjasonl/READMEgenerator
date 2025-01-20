@@ -33,13 +33,13 @@ const userResponses = ({userTitle, userDescription, userInstall, userUsage, user
     <h3 style="background-color: black;text-align: center;color:azure;" id="usage">Usage Information</h3>
     <p id="usageEntry">${userUsage}</p>
     <h3 style="background-color: black;text-align: center;color:azure;" id="license">License</h3>
-    <p id="licenseEntry">${userLicense}</p>
+    <p id="licenseEntry">This project is licensed under the terms of the ${userLicense}</p>
     <h3 style="background-color: black;text-align: center;color:azure;" id="contribGuide">Contribution Guidelines</h3>
     <p id="contribEntry">${userContribGuide}</p>
     <h3 style="background-color: black;text-align: center;color:azure;" id="tests">Test Instructions</h3>
     <p id="testsEntry">${userTests}</p>
     <h3 style="background-color: black;text-align: center;color:azure;" id="questions">Further Questions</h3>
-    <p id="questionsEntry">${userGitHub} ${userEmail}</p>
+    <p id="questionsEntry">GitHub address: ${userGitHub} Email: ${userEmail}</p>
 </body>
 <footer>
 
@@ -74,9 +74,10 @@ inquirer
         },
 
         {
-            type:'text',
+            type:'list',
             name:'userLicense',
-            message: colors.bgCyan('Enter License Information')  
+            message: colors.bgCyan('Choose License'),
+            choices: ['MIT License', 'General Public License (GPL)', 'Apache License 2.0', 'Mozilla Public License (MPL)']
         },
 
         {

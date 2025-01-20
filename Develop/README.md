@@ -24,9 +24,9 @@
     <h3 style="background-color: black;text-align: center;color:azure;" id="usage">Usage Information</h3>
     <p id="usageEntry">(1) Following successful installation, enter appropriate information into text fields for each question.(2) When final question is answered (currently: "Enter Email address") an README.md will auto generate in the local folder with user input.</p>
     <h3 style="background-color: black;text-align: center;color:azure;" id="license">License</h3>
-    <p id="licenseEntry">Developed by JGerdes for Coding Bootcamp, unlicensed.</p>
+    <p id="licenseEntry">This project is licensed under the terms of the MIT License</p>
     <h3 style="background-color: black;text-align: center;color:azure;" id="contribGuide">Contribution Guidelines</h3>
-    <p id="contribEntry">lease contact at one of the addresses below.</p>
+    <p id="contribEntry">Please contact at one of the addresses below.</p>
     <h3 style="background-color: black;text-align: center;color:azure;" id="tests">Test Instructions</h3>
     <p id="testsEntry">No further information to provide, please see Usage information.</p>
     <h3 style="background-color: black;text-align: center;color:azure;" id="questions">Further Questions</h3>
